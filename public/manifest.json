@@ -1,0 +1,12 @@
+{
+  "name": "Next Boilerplate",
+  "short_name": "NB",
+  "display": "fullscreen",
+  "orientation": "portrait",
+  "theme_color": "#000000",
+  "background_color": "#ffffff",
+  "scope": "/",
+  "start_url": "/",
+  "icons": [],
+  "splash_pages": null
+}
