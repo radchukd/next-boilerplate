@@ -1,3 +1,4 @@
+import { Provider } from "next-auth/client";
 import { appWithTranslation } from "next-i18next";
 import App from "next/app";
 import Head from "next/head";
@@ -11,22 +12,28 @@ class WebApp extends App {
     const { Component, pageProps } = this.props;
 
     return (
-      <React.Fragment>
+      <Provider session={pageProps.session}>
         <ThemeProvider theme={theme}>
-          <Head>
-            <title>Title</title>
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
-            />
-            <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
-            <meta name="Description" />
-            <meta charSet="utf-8" />
-          </Head>
+          <React.Fragment>
+            <Head>
+              <title>Title</title>
+              <meta
+                name="viewport"
+                content="width=device-width, initial-scale=1"
+              />
+              <link
+                rel="shortcut icon"
+                href="/favicon.ico"
+                type="image/x-icon"
+              />
+              <meta name="Description" />
+              <meta charSet="utf-8" />
+            </Head>
 
-          <Component {...pageProps} />
+            <Component {...pageProps} />
+          </React.Fragment>
         </ThemeProvider>
-      </React.Fragment>
+      </Provider>
     );
   }
 }
