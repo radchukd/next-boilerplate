@@ -19,9 +19,7 @@
       "@constants/*": ["src/constants/*"],
       "@contexts/*": ["src/contexts/*"],
       "@hooks/*": ["src/hooks/*"],
-      "@models/*": ["src/models/*"],
       "@pages/*": ["src/pages/*"],
-      "@styled/*": ["src/styled/*"],
       "@utils/*": ["src/utils/*"]
     },
     "preserveConstEnums": true,
@@ -32,6 +30,6 @@
     "strict": true,
     "target": "es5"
   },
-  "exclude": [".next", "node_modules", "out", "coverage"],
+  "exclude": [".next", "node_modules", "out"],
   "include": ["next-env.d.ts", "**/*.tsx", "**/*.ts"]
 }

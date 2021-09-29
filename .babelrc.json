@@ -11,17 +11,9 @@
           "@constants/*": "./src/constants",
           "@contexts/*": "./src/contexts",
           "@hooks/*": "./src/hooks",
-          "@models/*": "./src/models",
           "@pages/*": "./src/pages",
-          "@styled/*": "./src/styled",
           "@utils/*": "./src/utils"
         }
-      }
-    ],
-    [
-      "babel-plugin-styled-components",
-      {
-        "ssr": true
       }
     ]
   ]
